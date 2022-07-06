@@ -1,6 +1,5 @@
 const fs = require("fs");
 const express = require("express");
-const { group } = require("console");
 const app = express();
 const router = express.Router();
 
