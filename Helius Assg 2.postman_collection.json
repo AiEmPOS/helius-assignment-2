@@ -1,0 +1,85 @@
+{
+	"info": {
+		"_postman_id": "7f71b41d-d798-4397-af48-1c2f1159f45a",
+		"name": "Helius Assg 2",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "15521709"
+	},
+	"item": [
+		{
+			"name": "Get all contact",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/get-all-contacts",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"get-all-contacts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add group",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"group_name\": \"test group name\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/add-group",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"add-group"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add contact",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"group_name\": \"test group name\",\r\n    \"contact\": {\r\n        \"firstname\": \"test firstname\",\r\n        \"lastname\": \"test lastname\",\r\n        \"birthdate\": \"01/01/2022\",\r\n        \"phones\": [\"0912345678\", \"0891234567\"],\r\n        \"emails\" : [\"samepleemail@email.com\"],\r\n        \"urls\" : [\"http://testurl.com\"]\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/add-contact",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"add-contact"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

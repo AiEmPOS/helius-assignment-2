@@ -1,0 +1,65 @@
+{
+    "groups": [
+        {
+            "group_name": "Family",
+            "contacts": [
+                {
+                    "firstname": "Dad",
+                    "lastname": "",
+                    "birthdate": "",
+                    "phones": [],
+                    "emails": [],
+                    "urls": []
+                },
+                {
+                    "firstname": "Little Sister",
+                    "lastname": "",
+                    "birthdate": "",
+                    "phones": [],
+                    "emails": [],
+                    "urls": []
+                },
+                {
+                    "firstname": "Mom",
+                    "lastname": "",
+                    "birthdate": "",
+                    "phones": [],
+                    "emails": [],
+                    "urls": []
+                }
+            ]
+        },
+        {
+            "group_name": "Office",
+            "contacts": []
+        },
+        {
+            "group_name": "Close Friend",
+            "contacts": []
+        },
+        {
+            "group_name": "Others",
+            "contacts": []
+        },
+        {
+            "group_name": "test group name",
+            "contacts": [
+                {
+                    "firstname": "test firstname",
+                    "lastname": "test lastname",
+                    "birthdate": "01/01/2022",
+                    "phones": [
+                        "0912345678",
+                        "0891234567"
+                    ],
+                    "emails": [
+                        "samepleemail@email.com"
+                    ],
+                    "urls": [
+                        "http://testurl.com"
+                    ]
+                }
+            ]
+        }
+    ]
+}
