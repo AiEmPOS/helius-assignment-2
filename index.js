@@ -11,6 +11,8 @@ const dbFilename = "fsdb.json";
 router.get("/get-all-contacts", function (req, res) {
     fs.readFile(dbFilename, "utf8", function (err, data) {
         if (err) {
+            res.json({ message: "something went wrong" });
+            res.end();
             console.log(err);
         }
         const json = JSON.parse(data);
@@ -27,6 +29,8 @@ router.post("/add-group", function (req, res) {
     };
     fs.readFile(dbFilename, "utf8", function (err, dataOut) {
         if (err) {
+            res.json({ message: "something went wrong" });
+            res.end();
             console.log(err);
         }
         let json = JSON.parse(dataOut);
@@ -34,6 +38,8 @@ router.post("/add-group", function (req, res) {
         const dataIn = JSON.stringify(json, null, 4);
         fs.writeFile(dbFilename, dataIn, function (err) {
             if (err) {
+                res.json({ message: "something went wrong" });
+                res.end();
                 console.log(err);
             }
             res.json({
@@ -62,6 +68,8 @@ router.post("/add-contact", function (req, res) {
     };
     fs.readFile(dbFilename, "utf8", function (err, dataOut) {
         if (err) {
+            res.json({ message: "something went wrong" });
+            res.end();
             console.log(err);
         }
         let json = JSON.parse(dataOut);
@@ -81,6 +89,8 @@ router.post("/add-contact", function (req, res) {
         const dataIn = JSON.stringify(json, null, 4);
         fs.writeFile(dbFilename, dataIn, function (err) {
             if (err) {
+                res.json({ message: "something went wrong" });
+                res.end();
                 console.log(err);
             }
             res.json({
